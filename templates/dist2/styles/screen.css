@@ -1443,6 +1443,9 @@ div.strip img:first-child {
 .strip .person:last-child {
 	padding-right: 0;
 }
+.project .strip, .projects .strip {
+    padding: 0 !important;
+}
 #people {
 	min-height:650px;
 }
