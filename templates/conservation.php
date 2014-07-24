@@ -7,7 +7,7 @@ include("./head.inc");
 		<div id="sustainability">
 		<?php
 
-		if (count($page->sustainability_graphic)) {         
+		if (count($page->conservation_graphic)) {         
 			foreach($page->conservation_graphic as $image) {       
 				$img = $image->size(600, 500);      
 				echo "<img src='{$img->url}' alt='{$image->description}' />";
