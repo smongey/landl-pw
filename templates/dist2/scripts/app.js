@@ -136,7 +136,12 @@ $(document).ready(function($) {
 	var si = $('#project').royalSlider({
         autoScaleSlider: true,
         autoScaleSliderWidth: 600,
-        imageScaleMode: 'fit-if-smaller', 
+        autoplay:{
+			enabled:true,
+			stopAtAction:true,
+			delay:2000
+		},
+		imageScaleMode: 'fit-if-smaller', 
         keyboardNavEnabled: true,
        	imageScalePadding: 0,
         arrowsNav: true,
