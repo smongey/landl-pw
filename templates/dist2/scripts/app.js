@@ -136,6 +136,7 @@ $(document).ready(function($) {
 	var si = $('#project').royalSlider({
         autoScaleSlider: true,
         autoScaleSliderWidth: 600,
+        transitionType:"fade",
         autoplay:{
 			enabled:true,
 			stopAtAction:true,
