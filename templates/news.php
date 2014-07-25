@@ -11,7 +11,7 @@ include("./head.inc");
 ?>
 <div class="news">
 	<div class="image">
-		<img src="http://placehold.it/600x500/000/000" alt="">
+		<img src='<?php echo $post->news_image->size(600,500)->url ?>' alt='<?php echo $post->news_image->description ?>' />
 	</div>
 	<div class="text">
 		<h2><?php echo $post->title ?></h2>

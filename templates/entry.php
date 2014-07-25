@@ -7,8 +7,7 @@ include("./head.inc");
 
 <div class="news">
 	<div class="image">
-		<?php $main = $page->news_image->first ?>
-		<img src="<?php echo $main->url ?>" alt="">
+		<img src="<?php echo $page->news_image->size(600, 500)->url ?>" alt="<?php echo $main->description ?>">
 	</div>
 	<div class="text">
 		<h2><?php echo $page->title ?></h2>
