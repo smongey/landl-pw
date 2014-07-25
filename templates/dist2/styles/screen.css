@@ -1298,7 +1298,7 @@ img.rsImg {
     display: block;
     width: 30px;
     height: 30px;
-    background: #ccc;
+    /*background: #ccc;*/
 }
 .prevlink:after {
     display: block;
