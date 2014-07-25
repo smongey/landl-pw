@@ -924,7 +924,10 @@ nav .social {
     right: 4.375em;
     bottom: 1.5625em;
 }
-nav .social>li {
+nav .social li {
+    display: inline-block;
+}
+nav .social li>a {
     display: inline-block;
     text-indent: -9999px;
     width: 18px;
@@ -937,16 +940,16 @@ nav .social>li {
     border-radius: 9px;
     margin-right: 10px;
 }
-nav .social>li:hover, nav .social>li a.active {
+nav .social li>a:hover, nav .social li a.active {
     background-color: #999;
 }
-nav .social>li:nth-child(2) {
+nav .social li:nth-child(2) a {
     background-position: -18px 0;
 }
-nav .social>li:nth-child(3) {
+nav .social li:nth-child(3) a {
     background-position: -36px 0;
 }
-nav .social>li:nth-child(4) {
+nav .social li:nth-child(4) a {
     background-position: -54px 0;
     margin-right: 0px;
 }
@@ -1242,8 +1245,69 @@ img.rsImg {
     right: 0!important;
     margin-right: 20px;
     left: inherit;
+    position: fixed;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    /*background: #ccc;*/
 }
 .nextlink:after {
+    display: block;
+    width: 20px;
+    height: 2px;
+    content: '';
+    background: black;
+    top: 15px;
+    position: absolute;
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    -o-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.nextlink:before {
+    display: block;
+    width: 20px;
+    height: 2px;
+    content: '';
+    background: black;   
+    top: 15px;
+    position: absolute;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.prevlink {
+    left: 0!important;
+    margin-left: 20px;
+    position: fixed;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #ccc;
+}
+.prevlink:after {
+    display: block;
+    width: 20px;
+    height: 2px;
+    content: '';
+    background: black;
+    top: 0px;
+    position: absolute;
     -webkit-transform-origin: 100% 100%;
     -moz-transform-origin: 100% 100%;
     -ms-transform-origin: 100% 100%;
@@ -1255,7 +1319,14 @@ img.rsImg {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-.nextlink:before {
+.prevlink:before {
+    display: block;
+    width: 20px;
+    height: 2px;
+    content: '';
+    background: black;   
+    bottom: 0px;
+    position: absolute;
     -webkit-transform-origin: 100% 0;
     -moz-transform-origin: 100% 0;
     -ms-transform-origin: 100% 0;
