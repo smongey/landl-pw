@@ -5,7 +5,7 @@ include("./head.inc");
 
 <?php
 
-	$posts = $pages->find('template=entry, limit=1, sort=-sort'); 
+	$posts = $pages->find('template=entry, limit=1, sort=sort'); 
 	foreach($posts as $post) { 
 		
 ?>
